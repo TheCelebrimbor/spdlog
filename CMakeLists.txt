@@ -90,8 +90,8 @@ endif()
 
 # misc tweakme options
 if(WIN32)
-    option(SPDLOG_WCHAR_SUPPORT "Support wchar api" OFF)
-    option(SPDLOG_WCHAR_FILENAMES "Support wchar filenames" OFF)
+    option(SPDLOG_WCHAR_SUPPORT "Support wchar api" ON)
+    option(SPDLOG_WCHAR_FILENAMES "Support wchar filenames" ON)
 endif()
 if(${CMAKE_SYSTEM_NAME} STREQUAL "Linux")
     option(SPDLOG_CLOCK_COARSE
